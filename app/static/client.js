@@ -41,9 +41,11 @@ function populate_game_list() {
 
     let xhr = new XMLHttpRequest();
     let loc = window.location
-    let url = ('POST', `${loc.protocol}//localhost:5042/gamelist`)
-
-    xhr.open('POST', `http://localhost:5042/gamelist`, true);
+    let url = ('POST', `${loc.protocol}//${loc.hostname}:${loc.port}/gamelist`)
+    if (loc.hostname == '') {
+        url = 'http://localhost:5042/gamelist';
+    }
+    xhr.open('POST', url, true);
     xhr.onerror = function () {
         'Server appears down';
     }

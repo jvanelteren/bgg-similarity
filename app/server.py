@@ -44,7 +44,7 @@ async def setup_learner():
 
 async def setup_gamelist():
 
-    games = pd.read_csv('models/games_by_all_users.csv',index_col='primary')
+    games = pd.read_csv('app/models/games_by_all_users.csv',index_col='primary')
     games.sort_values('usersrated',ascending=False, inplace=True)
     games.reset_index(inplace=True)
     return games
