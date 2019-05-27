@@ -5,11 +5,9 @@ from starlette.middleware.cors import CORSMiddleware
 import uvicorn
 import asyncio
 import aiohttp
-from io import BytesIO
 from fastai import *
 from fastai.vision import *
 import time
-import pickle
 import pandas as pd
 from sklearn.neighbors import NearestNeighbors
   
