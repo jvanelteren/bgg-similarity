@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(255,248, 220);
+    font-family: "Calibri";
+}
+
+.no-display {
+    display: none;
+}
+
+.center {
+    margin: auto;
+    padding: 10px;
+    padding-left:50px;
+    padding-right:50px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.title {
+    font-size: 30px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #262626;
+}
+
+.content {
+    margin-top: 10em;
+}
+
+.analyze {
+    margin-top: 5em;
+}
+
+.upload-label {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.result-label {
+    margin-top: 0.5em;
+    padding: 10px;
+    font-size: 13px;
+}
+
+button.choose-file-button {
+  width: 200px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: solid 1px #7052CB;
+  font-size: 13px;
+  color: #7052CB;
+}
+
+button.analyze-button {
+    width: 200px;
+    height: 40px;
+    border: solid 1px #7052CB;
+    border-radius: 2px;
+    background-color: #7052CB;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+button:focus {outline:0;}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Tooltip arrow */
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }

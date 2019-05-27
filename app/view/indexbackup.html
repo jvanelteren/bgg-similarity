@@ -1,0 +1,141 @@
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='../static/style.css'>
+    <script src='../static/client.js'></script>
+</head>
+<body>
+<div>
+    <div class='center'>
+        <div class='title'>Classify Flower Images</div>
+        <p>
+            Upload an image of a <strong>Flower!</strong> A deep neural net will try to classify it for you. The model was tested with a 99% accuracy, so should be quite accurate.</p><p>There are 102 different types that can be recognized. 'alpine sea holly',
+ 'anthurium',
+ 'artichoke',
+ 'azalea',
+ 'ball moss',
+ 'balloon flower',
+ 'barbeton daisy',
+ 'bearded iris',
+ 'bee balm',
+ 'bird of paradise',
+ 'bishop of llandaff',
+ 'black-eyed susan',
+ 'blackberry lily',
+ 'blanket flower',
+ 'bolero deep blue',
+ 'bougainvillea',
+ 'bromelia',
+ 'buttercup',
+ 'californian poppy',
+ 'camellia',
+ 'canna lily',
+ 'canterbury bells',
+ 'cape flower',
+ 'carnation',
+ 'cautleya spicata',
+ 'clematis',
+ "colt's foot",
+ 'columbine',
+ 'common dandelion',
+ 'corn poppy',
+ 'cyclamen ',
+ 'daffodil',
+ 'desert-rose',
+ 'english marigold',
+ 'fire lily',
+ 'foxglove',
+ 'frangipani',
+ 'fritillary',
+ 'garden phlox',
+ 'gaura',
+ 'gazania',
+ 'geranium',
+ 'giant white arum lily',
+ 'globe thistle',
+ 'globe-flower',
+ 'grape hyacinth',
+ 'great masterwort',
+ 'hard-leaved pocket orchid',
+ 'hibiscus',
+ 'hippeastrum ',
+ 'japanese anemone',
+ 'king protea',
+ 'lenten rose',
+ 'lotus',
+ 'love in the mist',
+ 'magnolia',
+ 'mallow',
+ 'marigold',
+ 'mexican aster',
+ 'mexican petunia',
+ 'monkshood',
+ 'moon orchid',
+ 'morning glory',
+ 'orange dahlia',
+ 'osteospermum',
+ 'oxeye daisy',
+ 'passion flower',
+ 'pelargonium',
+ 'peruvian lily',
+ 'petunia',
+ 'pincushion flower',
+ 'pink primrose',
+ 'pink-yellow dahlia?',
+ 'poinsettia',
+ 'primula',
+ 'prince of wales feathers',
+ 'purple coneflower',
+ 'red ginger',
+ 'rose',
+ 'ruby-lipped cattleya',
+ 'siam tulip',
+ 'silverbush',
+ 'snapdragon',
+ 'spear thistle',
+ 'spring crocus',
+ 'stemless gentian',
+ 'sunflower',
+ 'sweet pea',
+ 'sweet william',
+ 'sword lily',
+ 'thorn apple',
+ 'tiger lily',
+ 'toad lily',
+ 'tree mallow',
+ 'tree poppy',
+ 'trumpet creeper',
+ 'wallflower',
+ 'water lily',
+ 'watercress',
+ 'wild pansy',
+ 'windflower',
+ 'yellow iris'
+        </p>
+        <div class='content'>
+            <div class='no-display'>
+                <input id='file-input'
+                       class='no-display'
+                       type='file'
+                       name='file'
+                       accept='image/*'
+                       onchange='showPicked(this)'>
+            </div>
+            <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+            <div class='upload-label'>
+                <label id='upload-label'>No file chosen</label>
+            </div>
+            <div>
+                <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+            </div>
+            <div class='analyze'>
+                <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+            </div>
+            <div class='result-label'>
+                <label id='result-label'></label>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
