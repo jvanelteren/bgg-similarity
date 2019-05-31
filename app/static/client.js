@@ -207,6 +207,8 @@ function GetDateSortingKey(format, text) {
 
 
 document.getElementById('indextable').style.display = "none";
+document.getElementById('donate').style.display = "none";
+document.getElementById('paypal').style.display = "none";
 
 // fill the game table with content. The backend should return an array of size x,5
 function fillGameTable(content) {
@@ -230,5 +232,7 @@ function fillGameTable(content) {
     }
     document.getElementById('indextable').children[1].innerHTML = contentstring;
     document.getElementById('indextable').style.display = "block";
+    document.getElementById('donate').style.display = "block";
+    document.getElementById('paypal').style.display = "block";
 }
 

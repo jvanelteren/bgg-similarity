@@ -23,16 +23,15 @@
 
     <div class='content'>
         Did you ever have a game you really liked? Maybe there are similar games that are even better!
-        <a href="https://boardgamegeek.com/">BoardGameGeek</a> is a site where hundreds of thousands of users have rated tens of thousands of games.
-        With their API I've downloaded 13 million reviews (e.g. Amy gave Catan a 8).
+        BoardGameGeek is a site where tens of thousands of users have rated tens of thousands of games.
+        With their API I've downloaded 13 million reviews (e.g. Donald gave Monopoly a 6).
         Doing some machine learning, the computer is able to cluster similar games together, based on the review
-        patterns that it distills from the review data. For example, maybe cooperative games exist are rated high by people who like cooperative games.
-        In this way, the computer figures out wat 'similar' means with only the users, games and ratings at it's disposal. <br><br>
-        At Kaggle I've uploaded <a href="https://www.kaggle.com/jvanelteren/boardgamegeek-reviews/">the data</a>, including <a href="https://www.kaggle.com/jvanelteren/exploring-the-13m-reviews-bgg-dataset">some exploratory data analysis</a>. And <a href="https://github.com/jvanelteren/bgg-similarity">the code of the app</a> on GitHub. 
-        
-        <br><br>Try it out yourself!<br><br></br>
+        patterns
+        that users are giving. For example, horror games are rated high by horror enthusiasts, so horror games
+        expect a higher score.
+        <br><br>Try it out for yourself!<br><br>
 
-        
+
 
         <table>
             <tr>
@@ -91,24 +90,15 @@
                 <th><a href="javascript:SortTable(0,'T');"></a></th>
                 <th><a href="javascript:SortTable(1,'T');">Game</a></th>
                 <th><div class="tooltip"><span class="tooltiptext">Amount of scores a game has received</span><a href="javascript:SortTable(2,'N');">Number of reviews</a></div></th>
-                <th><div class="tooltip"><span class="tooltiptext">Score on BGG ('GeekScore'). This score is penalized for a small amount of reviews</span><a href="javascript:SortTable(3,'N');">BGG GeekScore</a></div></th>
-                <th><div class="tooltip"><span class="tooltiptext">Mathemathical average of reviews on BGG</span><a href="javascript:SortTable(4,'N');">BGG Average</a></div></th>
-                <th><div class="tooltip"><span class="tooltiptext">Model score has a range between x and y. This is a score that's 'unbiased' for users
-                    preferences, such as users giving games a higher score just because they are fan of the genre 
-                </span><a href="javascript:SortTable(5,'N');">Model Score</a></div></th>
+                <th><div class="tooltip"><span class="tooltiptext">Score on BGG. This score is penalized for a small amount of reviews</span><a href="javascript:SortTable(3,'N');">BGG GeekScore</a></div></th>
+                <th><div class="tooltip"><span class="tooltiptext">Mathemathical average of all reviews on BGG</span><a href="javascript:SortTable(4,'N');">BGG Average</a></div></th>
+                <th><div class="tooltip"><span class="tooltiptext">Model score has a range between x and y</span><a href="javascript:SortTable(5,'N');">Model Score</a></div></th>
                 <th><div class="tooltip"><span class="tooltiptext">The smaller the number, the more similar</span><a href="javascript:SortTable(6,'N');">Similarity</a></div></th>
             </tr>
         </thead>
         <tbody>
         </tbody>
     </table>
-    <p id = 'donate'>If you enjoyed this, click the Donate button and supporting a buck or two so I can keep the app running (Paypal)</p>
-    <form id = 'paypal' action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_s-xclick" />
-        <input type="hidden" name="hosted_button_id" value="9YV875SZC3UDS" />
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-        <img alt="" border="0" src="https://www.paypal.com/en_NL/i/scr/pixel.gif" width="1" height="1" />
-    </form>
 
 
 </body>
