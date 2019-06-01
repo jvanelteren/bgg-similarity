@@ -23,16 +23,17 @@
 
     <div class='content'>
         Did you ever have a game you really liked? Maybe there are similar games that are even better!
-        <a href="https://boardgamegeek.com/" target="_blank">BoardGameGeek</a> is a site where hundreds of thousands of users have rated tens of thousands of games.
-        With their API I've downloaded 13 million reviews (e.g. Amy gave Catan a 8).
-        Doing some machine learning, the computer is able to cluster similar games together, based on the review
-        patterns that it distills from the review data. For example, maybe cooperative games exist are rated high by people who like cooperative games.
-        In this way, the computer figures out wat 'similar' means with only the users, games and ratings at it's disposal. <br><br>
-        At Kaggle I've uploaded <a href="https://www.kaggle.com/jvanelteren/boardgamegeek-reviews/" target="_blank">the data</a>, including <a href="https://www.kaggle.com/jvanelteren/exploring-the-13m-reviews-bgg-dataset" target="_blank">some exploratory data analysis</a> and an <a href="https://www.kaggle.com/jvanelteren/collaborative-filtering-defining-similar-games" target="_blank">in-depth analysis</a>. And <a href="https://github.com/jvanelteren/bgg-similarity" target="_blank">the code of the app</a> on GitHub. 
+        <a href="https://boardgamegeek.com/" target="_blank">BoardGameGeek</a> is a site where hundreds of thousands of users have rated tens of thousands of games. In total they currently have about 13 million reviews. An example could be: user 'Amy' gave game 'Catan' a rating of '8').<br><br>
+        With machine learning, the computer is able to cluster similar games together, based on the review
+        patterns that it distills from the review data. For example, maybe some fantasy games exist that are rated high by people who like fantasy games.
+        The computer figures out wat 'similar' means with only the users, games and ratings at it's disposal. With this site you can also explore the results!<br><br>
         
-        <br><br>Try it out yourself!<br><br></br>
+        For the enthusiasts who want to know what's under the engine: At Kaggle I've uploaded <a href="https://www.kaggle.com/jvanelteren/boardgamegeek-reviews/" target="_blank">the data</a>, including <a href="https://www.kaggle.com/jvanelteren/exploring-the-13m-reviews-bgg-dataset" target="_blank">some exploratory data analysis</a> and an <a href="https://www.kaggle.com/jvanelteren/collaborative-filtering-defining-similar-games" target="_blank">in-depth analysis</a>. And <a href="https://github.com/jvanelteren/bgg-similarity" target="_blank">the code of the app</a> on GitHub. 
+        <br><br>
 
-        
+        <br><br>Try it out yourself and have fun!<br><br><br>
+
+       
 
         <table>
             <tr>
@@ -47,12 +48,11 @@
                 <td>Minimum number of ratings for a game</td>
                 <td> <select name="num_reviews" id='num_reviews'>
                         <option value="100">100 (many unknown games in the results)</option>
-                        <option value="500">500</option>
-                        <option value="2000" selected="selected">5000</option>
-                        <option value="7000">7000 (only well known games in the results)</option>
+                        <option value="500">500 (some unknown games in the results)</option>
+                        <option value="2000" selected="selected">2000 (fairly well known games in the results)</option>
+                        <option value="7000">7000 (only very known games in the results)</option>
                     </select></td>
             </tr>
-)
             <tr>
                 <td>Number of similar games in the result</td>
                 <td> <select name="num_similar_games" id='num_similar_games'>
