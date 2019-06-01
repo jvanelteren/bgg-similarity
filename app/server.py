@@ -10,7 +10,7 @@ from fastai.vision import *
 import time
 import pandas as pd
 from sklearn.neighbors import NearestNeighbors
-  
+import urllib 
 
 export_file_url = 'https://drive.google.com/uc?export=download&id=1G1e24nRTqMog5-d3CuRTfJ2yzhAO49xT'
 export_file_name = 'export-3cycles1e-2-bs100000factors50yrange2-10wd005'
@@ -68,7 +68,7 @@ def index(request):
 async def analyze(request):
     data = await request.form()
     print('received data from web',data)
-    selected_game = data['selected_game']
+    selected_game = urllib.parse.unquote_plus(data['selected_game'])
     num_reviews = int(data['num_reviews'])
     num_similar_games = int(data['num_similar_games'])
 

@@ -30,7 +30,7 @@ function analyze() {
 
     let fileData = new FormData();
     // alternative to look at text instead of value. options can also be left out
-    fileData.append('selected_game', el('selected_game').value);
+    fileData.append('selected_game', encodeURIComponent(el('selected_game').value));
     fileData.append('num_reviews', el('num_reviews').options[el('num_reviews').selectedIndex].value);
     fileData.append('num_similar_games', el('num_similar_games').options[el('num_similar_games').selectedIndex].value);
     xhr.send(fileData);

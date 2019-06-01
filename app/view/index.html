@@ -44,22 +44,21 @@
                     </datalist></td>
             </tr>
             <tr>
-                <td>Minimum number of reviews to take game into account</td>
+                <td>Minimum number of ratings for a game</td>
                 <td> <select name="num_reviews" id='num_reviews'>
-                        <option value="100" selected="selected">100</option>
+                        <option value="100">100 (many unknown games in the results)</option>
                         <option value="500">500</option>
-                        <option value="2000">5000</option>
-                        <option value="10000">10000</option>
+                        <option value="2000" selected="selected">5000</option>
+                        <option value="7000">7000 (only well known games in the results)</option>
                     </select></td>
             </tr>
-
+)
             <tr>
-                <td>Number of similar games to search for</td>
+                <td>Number of similar games in the result</td>
                 <td> <select name="num_similar_games" id='num_similar_games'>
-                        <option value="10" selected="selected">10</option>
-                        <option value="30">30</option>
-                        <option value="100">100</option>
-                        <option value="500">500</option>
+                        <option value="10" selected="selected">10 most similar games</option>
+                        <option value="30">30 most similar games</option>
+                        <option value="100">100 most similar games</option>
                     </select></td>
             </tr>
 
